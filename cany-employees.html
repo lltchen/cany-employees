@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+	
+		hr{
+		      background-color: #000000;
+		    height: 1px;
+		        width: 100% !important;
+		
+		}
+		
+		  
+		.filterDiv {
+		  float: left;
+		  background-color:white;
+		  color: black;
+		  width: 374.5px;
+		  height: 405.137px;
+		  text-align: left;
+		  margin:15px;
+		  padding:5px;
+		  display: none;
+		  opacity: 0.9;
+border: 1px solid #E8E8E8;
+box-sizing: border-box;
+box-shadow: 8px 24px 28px -8px rgba(0, 0, 0, 0.24);
+		}
+		
+		.img {
+		      width: 100% !important;
+		      height: 249.656px !important;
+		      background-size: cover;
+		    background-position-y: 13%;
+		  }
+		  .filterDiv >div:last-child{
+		      font-family: Neue Haas Grotesk Display Pro;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+padding:10px 0px;
+margin:10px;
+
+border-top: 0.5px solid #D0D0D0;
+		  }
+		    .name{
+		    font-weight:bold;
+font-family: Neue Haas Grotesk Display Pro;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 100%;			margin:15px 0px;
+		  padding-left:10px;
+
+		}  
+		
+		  .jobTitle{
+font-family: Neue Haas Grotesk Display Pro;
+font-style: normal;
+font-weight: 450;
+font-size: 13px;
+line-height: 100%;		  	margin-bottom:25px !important;
+		  padding-left:10px;
+
+		
+		}
+		  
+		 .show {
+		  display: inline-block;
+		   	animation: show 1s cubic-bezier(0.445, 0.050, 0.550, 0.950) both;
+		
+		}
+		@keyframes show {
+		  0% {
+		    transform: translateY(1000px);
+		    opacity: 0;
+		  }
+		  100% {
+		    transform: translateY(0);
+		    opacity: 1;
+		  }
+		} 
+		.container {
+		  margin-top: 20px;
+		  overflow: hidden;
+		  display:inline-block;
+		  	width:69%;
+		}
+		
+		/* Style the buttons */
+		.btn {
+		  border: none;
+		  color: #000000;
+		  outline: none;
+		  padding: 22.77px 0px;
+		  cursor: pointer;
+		  border-width: 1px;
+		  display:block;
+		  font-size: 18px;
+            background-color: white;
+    /*border-bottom: 0.5px solid #AFAFAF;*/
+    width:70%;
+    text-align:left;
+		}
+		
+		.btn:hover {
+		  background-color: #008bff;
+		  color: white;
+		}
+		
+		.btn.active {
+            font-weight: bold;
+
+		}
+		.text-shadow-drop-center {
+			animation: text-shadow-drop-center 0.6s both;
+		}
+		#myBtnContainer{
+		  	padding:50px 0px;
+		  	display:inline-block;
+		  	width:30%;
+		  	vertical-align:top;
+		  }
+		
+		#myBtnContainer > .btn{
+		  	margin:10px 10px;
+		  }
+		  #peopleSectionHeader{
+		      align-items: center;
+    border-top: 1px none #000;
+    border-bottom: 1px none #000;
+    background-color: hsla(0, 0%, 100%, 0.42);
+    box-shadow: 0 -4px 3px -6px #000, 0 11px 12px -20px #000;
+    font-family: NHaasGroteskDSPro, sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+}
+		  }
+	</style>
+</head>
+
+<body>
+<div style="background-color:white">
+    <div id="peopleSectionHeader">
+    	<h2 style="display:inline-block;width:30%;font-family: Neue Haas Grotesk Display Pro;font-size:24px; margin-right:10px;">Our People</h2>
+    	<h2 style="font-weight:400;font-size: 14px;display:inline-block;width:68%;text-align: end;">65 Employees</h2>
+	</div>
+	<div id="myBtnContainer">
+		<button class="btn active" onclick="filterSelection('all')">All</button>
+		<button class="btn" onclick="filterSelection('lead')">Leadership</button>
+		<button class="btn" onclick="filterSelection('nyc')">New York</button>
+		<button class="btn" onclick="filterSelection('chi')">Chicago</button>
+		<button class="btn" onclick="filterSelection('ak')">Architecture </button>
+		<button class="btn" onclick="filterSelection('eng')">Engineering</button>
+		<button class="btn" onclick="filterSelection('io')">Internal Operations</button>
+	</div>
+	<div class="container">
+        <div class="filterDiv ny io  ">
+			<div class="img" style="background-position-y: 15%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d20ec9574dcf205ac392_2021_06-MCP-CANY-Adolfo%20Amigon-0001-0870.jpg')"></div>
+			<div class="name">Adolfo Amigon</div>
+			<div class="jobTitle">IT Technician</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Internal Operations
+            </div>
+		</div>		    
+        <div class="filterDiv ny ak  ">
+			<div class="img" style="background-position-y: 44%;background-image:url('https://static1.squarespace.com/static/5defb9973be8fa60506a127c/t/5f7cd146d905115b8cf434b3/1602015558631/CANY_ICON_BLUE-WHITE.png')"></div>
+			<div class="name">Adriana Castillo Tabares</div>
+			<div class="jobTitle">Drafting Quality Manager</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture
+            </div>
+		</div>			    
+        <div class="filterDiv ny io  ">
+			<div class="img" style="background-position-y: 44%;background-image:url('https://static1.squarespace.com/static/5defb9973be8fa60506a127c/t/5f7cd146d905115b8cf434b3/1602015558631/CANY_ICON_BLUE-WHITE.png')"></div>
+			<div class="name">Aissatou N Ba</div>
+			<div class="jobTitle">Accounts Payable & Billing Manager</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Internal Operations
+            </div>
+		</div>		    
+        <div class="filterDiv ny io  ">
+			<div class="img" style="background-position-y: 44%;background-image:url('https://static1.squarespace.com/static/5defb9973be8fa60506a127c/t/5f7cd146d905115b8cf434b3/1602015558631/CANY_ICON_BLUE-WHITE.png')"></div>
+			<div class="name">Akesia Bowen</div>
+			<div class="jobTitle">Human Resources Assistant</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Internal Operations
+            </div>
+		</div>		    
+        <div class="filterDiv ny ak  ">
+			<div class="img" style="background-position-y: 10%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d20ea574491f3c68e021_2021_06-MCP-CANY-Alafia%20Akhtar-0003-0061.jpg')"></div>
+			<div class="name">Alafia Akhtar</div>
+			<div class="jobTitle">Project Manager</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture
+            </div>
+		</div>		    
+        <div class="filterDiv ny ak  ">
+			<div class="img" style="background-position-y: 10%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d20e378baee15434b968_2021_06-MCP-CANY-Allister%20Shuffler-0003-0846.jpg')"></div>
+			<div class="name">Allister Shuffler</div>
+			<div class="jobTitle">Project Manager</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture
+            </div>
+		</div>		    
+        <div class="filterDiv ny ak  ">
+			<div class="img" style="background-position-y: 10%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d20ef2994d76a04f5a68_2021_06-MCP-CANY-Amy%20Deluca-0001-0041.jpg')"></div>
+			<div class="name">Amy Deluca</div>
+			<div class="jobTitle">Project Manager / Studio Lead</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture
+            </div>
+		</div>		    
+        <div class="filterDiv ny ak  ">
+			<div class="img" style="background-position-y: 14%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d20f0fb1885d62dab9c3_2021_06-MCP-CANY-An%20Chen-0001-0067.jpg')"></div>
+			<div class="name">An Chen</div>
+			<div class="jobTitle">Project Manager</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture
+            </div>
+		</div>		    
+        <div class="filterDiv ny ak  ">
+			<div class="img" style="background-position-y: 10%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d20fcc222e97ff7d75f3_2021_06-MCP-CANY-Andrew%20Cucciniello-0001-0390.jpg')"></div>
+			<div class="name">Andrew Cucciniello</div>
+			<div class="jobTitle">Senior Project Manager / Studio Lead</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture
+            </div>
+		</div>	    
+        <div class="filterDiv ny ak  ">
+			<div class="img" style="background-position-y: 10%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d211986978142e61302e_2021_06-MCP-CANY-Angel%20Lugo-0001-0124.jpg')"></div>
+			<div class="name">Angel Lugo</div>
+			<div class="jobTitle"> Project Manager</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture
+            </div>
+		</div>	    
+        <div class="filterDiv ny io  ">
+			<div class="img" style="background-position-y: 20%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d20f386b2ff16e75bd9b_2021_06-MCP-CANY-Annabel%20Harper-0003-1299.jpg')"></div>
+			<div class="name">Annabel Harper</div>
+			<div class="jobTitle">Contracts & Project Initiation Coordinator</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Internal Operations
+            </div>
+		</div>	    
+        <div class="filterDiv ny ak  ">
+			<div class="img" style="background-position-y: 20%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d21128a991021585f87a_2021_06-MCP-CANY-Beverlee%20Danser-0001-1163.jpg')"></div>
+			<div class="name">Beverlee Danser</div>
+			<div class="jobTitle">Senior Design Associate</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture
+            </div>
+		</div>	    
+        <div class="filterDiv ny io  ">
+			<div class="img" style="background-position-y: 25%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d21028a991cba385f879_2021_06-MCP-CANY-Bob%20James-0003-1216.jpg')"></div>
+			<div class="name">Bob James</div>
+			<div class="jobTitle">Executive Director of Architectural Services, RA</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture
+            </div>
+		</div>	    
+        <div class="filterDiv ny ak  ">
+			<div class="img" style="background-position-y: 14%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d213ebc882ccb2ce52c6_2021_06-MCP-CANY-Brette%20Ocampo-0001-1051.jpg')"></div>
+			<div class="name">Brette Ocampo</div>
+			<div class="jobTitle">Project Manager</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture
+            </div>
+		</div>	    
+        <div class="filterDiv ny io  ">
+			<div class="img" style="background-position-y:14%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d2112c14fd07f6a26ad8_2021_06-MCP-CANY-Carol%20Escobar-0003-0778.jpg')"></div>
+			<div class="name">Carol Escobar</div>
+			<div class="jobTitle">Contract Manager / Office Manager</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Internal Operations
+            </div>
+		</div>	    
+        <div class="filterDiv ny ak  ">
+			<div class="img" style="background-position-y: 12%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d212b0ae3464ee88ff84_2021_06-MCP-CANY-Caryn%20Koster-0001-1107.jpg')"></div>
+			<div class="name">Caryn Koster</div>
+			<div class="jobTitle">Senior Project Manager, RA, NCARB / Studio Lead</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture
+            </div>
+		</div>	    
+        <div class="filterDiv ny ak  ">
+			<div class="img" style="background-position-y: 15%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d2132c14fd1c6aa26ad9_2021_06-MCP-CANY-Charlie%20Kramer-0001-0757.jpg')"></div>
+			<div class="name">Charlie Kramer</div>
+			<div class="jobTitle">Director of Preservation & Restoration, RA, AIA, LEED AP</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture
+            </div>
+		</div>	    
+        <div class="filterDiv ny eng  ">
+			<div class="img" style="background-position-y: 14%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d214a3311951d3d22dc0_2021_06-MCP-CANY-Christen%20Currie-0001-1499.jpg')"></div>
+			<div class="name">Christen Currie</div>
+			<div class="jobTitle">Structural Engineer</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Engineering
+            </div>
+		</div>	    
+        <div class="filterDiv ny ak  ">
+			<div class="img" style="background-position-y: 14%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d2155bd5a226ad240950_2021_06-MCP-CANY-Claudia%20Vesga-0003-0244.jpg')"></div>
+			<div class="name">Claudia Vesga</div>
+			<div class="jobTitle">Associate Drafter</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture
+            </div>
+		</div>	    
+        <div class="filterDiv ny ak  ">
+			<div class="img" style="background-position-y: 44%;background-image:url('https://static1.squarespace.com/static/5defb9973be8fa60506a127c/t/5f7cd146d905115b8cf434b3/1602015558631/CANY_ICON_BLUE-WHITE.png')"></div>
+			<div class="name">David Flory</div>
+			<div class="jobTitle">Senior Project Manager / Technical Lead</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture
+            </div>
+		</div>	    
+        <div class="filterDiv ny ak  ">
+			<div class="img" style="background-position-y: 12%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d215f2994d5f774f5a6d_2021_06-MCP-CANY-David%20Kent-0003-0189.jpg')"></div>
+			<div class="name">David Kent</div>
+			<div class="jobTitle">Senior Project Manager</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture
+            </div>
+		</div>	    
+        <div class="filterDiv ny ak  ">
+			<div class="img" style="background-position-y: 14%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d2152c14fd958aa26adb_2021_06-MCP-CANY-David%20Martinez-0001-1427.jpg')"></div>
+			<div class="name">David Martinez</div>
+			<div class="jobTitle">Senior Project Manager / Studio Lead</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture
+            </div>
+		</div>	    
+        <div class="filterDiv ny eng  ">
+			<div class="img" style="background-position-y: 10%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d2172c14fd6baba26ade_2021_06-MCP-CANY-Dochka%20Ucenova-0003-1510.jpg')"></div>
+			<div class="name">Dochka Ucenova</div>
+			<div class="jobTitle">Senior Engineer</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Engineering
+            </div>
+		</div>	    
+        <div class="filterDiv ny io  ">
+			<div class="img" style="background-position-y: 44%;background-image:url('https://static1.squarespace.com/static/5defb9973be8fa60506a127c/t/5f7cd146d905115b8cf434b3/1602015558631/CANY_ICON_BLUE-WHITE.png')"></div>
+			<div class="name">Elliot Chen</div>
+			<div class="jobTitle">Junior Systems Administrator</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Internal Operations
+            </div>
+		</div>	    
+        <div class="filterDiv ny ak  ">
+			<div class="img" style="background-position-y: 20%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d2175bd5a26a27240953_2021_06-MCP-CANY-Elyse%20Marks-0001-0015.jpg')"></div>
+			<div class="name">Elyse Marks</div>
+			<div class="jobTitle">Project Manager / Studio Lead</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture
+            </div>
+		</div>	    
+        <div class="filterDiv ny lead  ">
+			<div class="img" style="background-position-y: 18%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d218378bae5d4834b96d_2021_06-MCP-CANY-Erin%20Fisher-0003-1074.jpg')"></div>
+			<div class="name">Erin Fisher</div>
+			<div class="jobTitle">Executive Director of Engineering Services, PE</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Leadership
+            </div>
+		</div>
+        <div class="filterDiv ny ak  ">
+			<div class="img" style="background-position-y: 44%;background-image:url('https://static1.squarespace.com/static/5defb9973be8fa60506a127c/t/5f7cd146d905115b8cf434b3/1602015558631/CANY_ICON_BLUE-WHITE.png')"></div>
+			<div class="name">Frederico Durand</div>
+			<div class="jobTitle">Assistant Project Manager</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture
+            </div>
+		</div>
+        <div class="filterDiv ny ak  ">
+			<div class="img" style="background-position-y: 10%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d218130cd10347af0f57_2021_06-MCP-CANY-Henry%20Marksbury-0005-1365.jpg')"></div>
+			<div class="name">Henry Marksbury</div>
+			<div class="jobTitle">Project Manager</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture
+            </div>
+		</div>
+        <div class="filterDiv ny lead  ">
+			<div class="img" style="background-position-y: 16%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d218dd526088f728253b_2021_06-MCP-CANY-Ivan%20Zurkiwskyj-0001-0081.jpg')"></div>
+			<div class="name">Ivan Zurkiwskyj</div>
+			<div class="jobTitle">Director of Professional Services, RA, AIA, LEED AP / Technical Lead</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Leadership
+            </div>
+		</div>
+        <div class="filterDiv ny io  ">
+			<div class="img" style="background-position-y: 44%;background-image:url('https://static1.squarespace.com/static/5defb9973be8fa60506a127c/t/5f7cd146d905115b8cf434b3/1602015558631/CANY_ICON_BLUE-WHITE.png')"></div>
+			<div class="name">Ivette Fermin</div>
+			<div class="jobTitle">Accounting Administrative Assistant</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Internal Operations
+            </div>
+		</div>
+        <div class="filterDiv ny ak  ">
+			<div class="img" style="background-position-y: 14%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d21ae35277756593a81c_2021_06-MCP-CANY-Jaime%20Chavez-0001-0119.jpg')"></div>
+			<div class="name">Jaime Chavez</div>
+			<div class="jobTitle">Senior Project Manager / Studio Lead</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture
+            </div>
+		</div>
+        <div class="filterDiv ny ak  ">
+			<div class="img" style="background-position-y: 10%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d21ab0ae34441588ff8c_2021_06-MCP-CANY-James%20Rigley-0001-0783.jpg')"></div>
+			<div class="name">James Rigley</div>
+			<div class="jobTitle">Project Manager</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture
+            </div>
+		</div>
+        <div class="filterDiv ny lead  ">
+			<div class="img" style="background-position-y: 18%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d219720f3a6b8d085a1c_2021_06-MCP-CANY-Jarrett%20Huddleston-0003-1334.jpg')"></div>
+			<div class="name">Jarrett Huddleston</div>
+			<div class="jobTitle">Principal</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Leadership
+            </div>
+		</div>
+        <div class="filterDiv ny io  ">
+			<div class="img" style="background-position-y: 10%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d21acb999d842d51e05c_2021_06-MCP-CANY-Jennifer%20Murphy-0003-0304.jpg')"></div>
+			<div class="name">Jennifer Murphy</div>
+			<div class="jobTitle">Assistant Project Manager</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Internal Operations
+            </div>
+		</div>
+        <div class="filterDiv ny io  ">
+			<div class="img" style="background-position-y: 14%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d21be35277605493a827_2021_06-MCP-CANY-Jennifer%20Pucci-0003-0909.jpg')"></div>
+			<div class="name">Jennifer Pucci</div>
+			<div class="jobTitle">Director of Human Resources</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture
+            </div>
+		</div>
+        <div class="filterDiv ny ak  ">
+			<div class="img" style="background-position-y: 14%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d21ba58c4620b13f653e_2021_06-MCP-CANY-Jenny%20Yip-0001-0398.jpg')"></div>
+			<div class="name">Jenny Yip</div>
+			<div class="jobTitle">Assistant Project Manager</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture
+            </div>
+		</div>		
+	    
+        <div class="filterDiv ny io  ">
+			<div class="img" style="background-position-y: 16%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d21cbb4c9d46ac964a4b_2021_06-MCP-CANY-Jesse%20Lourey-0001-0033.jpg')"></div>
+			<div class="name">Jesse Lourey</div>
+			<div class="jobTitle">Marketing & Communications Manager</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Internal Operations
+            </div>
+		</div>
+		
+        <div class="filterDiv ny io  ">
+			<div class="img" style="background-position-y: 20%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d21c378bae677634b99a_2021_06-MCP-CANY-Jessica%20Lo-0005-1290.jpg')"></div>
+			<div class="name">Jessica Lo</div>
+			<div class="jobTitle">Receptionist / Administrative Assistant</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Internal Operations
+            </div>
+		</div>
+		
+		
+        <div class="filterDiv ny lead  ">
+			<div class="img" style="background-position-y: 16%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d21d5673de61f2537d97_2021_06-MCP-CANY-Jessica%20Morales-0001-0883.jpg')"></div>
+			<div class="name">Jessica Morales</div>
+			<div class="jobTitle">VP of Business Analytics & Systems</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Leadership
+            </div>
+		</div>
+		
+		
+        <div class="filterDiv ny lead  ">
+			<div class="img" style="background-position-y: 16%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d21ddc205c6eb26c27dc_2021_06-MCP-CANY-Joan%20Berkowitz-0003-0348.jpg')"></div>
+			<div class="name">Joan Berkowitz</div>
+			<div class="jobTitle">Technical Director</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Leadership
+            </div>
+		</div>
+		
+		
+        <div class="filterDiv ny ak  ">
+			<div class="img" style="background-position-y: 44%;background-image:url('https://static1.squarespace.com/static/5defb9973be8fa60506a127c/t/5f7cd146d905115b8cf434b3/1602015558631/CANY_ICON_BLUE-WHITE.png')"></div>
+			<div class="name">John Gjieli</div>
+			<div class="jobTitle">Project Manager</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture
+            </div>
+		</div>
+		
+        <div class="filterDiv ny lead  ">
+			<div class="img" style="background-position-y: 10%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d21ff2994d031f4f5a83_2021_06-MCP-CANY-John%20Rudisill-0003-0795.jpg')"></div>
+			<div class="name">John Rudisill</div>
+			<div class="jobTitle">Senior VP of Business Development & Technical Services</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Leadership
+            </div>
+		</div>	    
+	    
+        <div class="filterDiv ny lead  ">
+			<div class="img" style="background-position-y: 12%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d21fb0ae3432a788ff8f_2021_06-MCP-CANY-Joseph%20Badolato-0001-1446.jpg')"></div>
+			<div class="name">Joseph Badolato</div>
+			<div class="jobTitle">Executive Vice President</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Leadership
+            </div>
+		</div>	    
+	    
+        <div class="filterDiv ny ak  ">
+			<div class="img" style="background-position-y: 16%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d21ff2994d4cc34f5a82_2021_06-MCP-CANY-Josh%20Dolan-0001-0277.jpg')"></div>
+			<div class="name">Joshua Dolan</div>
+			<div class="jobTitle">Senior Project Manager / Studio Lead</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture
+            </div>
+		</div>	    
+	    
+        <div class="filterDiv ny ak  ">
+			<div class="img" style="background-position-y: 16%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d21f720f3ad125085a46_2021_06-MCP-CANY-Julie%20Foster-0005-1487.jpg')"></div>
+			<div class="name">Julie Foster</div>
+			<div class="jobTitle">Project Manager / Studio Lead</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture
+            </div>
+		</div>
+		
+		
+        <div class="filterDiv ny ak  ">
+			<div class="img" style="background-position-y: 11%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d22028a9911b6785f8eb_2021_06-MCP-CANY-Kate%20Groob-0001-0257.jpg')"></div>
+			<div class="name">Kate Groob</div>
+			<div class="jobTitle">Senior Project Manager</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture
+            </div>
+		</div>	    
+	    
+        <div class="filterDiv ny ak  ">
+			<div class="img" style="background-position-y: 20%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d220e3df2da9c480da24_2021_06-MCP-CANY-Kayla%20Loveman-0005-1234.jpg')"></div>
+			<div class="name">Kayla Loveman</div>
+			<div class="jobTitle">Project Manager</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture
+            </div>
+		</div>
+		
+        <div class="filterDiv ny ak  ">
+			<div class="img" style="background-position-y: 8%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d220a57449395768e031_2021_06-MCP-CANY-Lauren%20Licitra-0003-0850.jpg')"></div>
+			<div class="name">Laura Licitra</div>
+			<div class="jobTitle">Project Manager</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture
+            </div>
+		</div>	  	    
+			    
+        <div class="filterDiv ny ak  ">
+			<div class="img" style="background-position-y: 10%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d221130cd168c9af0f71_2021_06-MCP-CANY-Liz%20Madigan-0001-0149.jpg')"></div>
+			<div class="name">Liz Madigan</div>
+			<div class="jobTitle">Assistant Project Manager</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture
+            </div>
+		</div>	  	    
+		
+		
+	    <div class="filterDiv ny io  ">
+			<div class="img" style="background-position-y: 44%;background-image:url('https://static1.squarespace.com/static/5defb9973be8fa60506a127c/t/5f7cd146d905115b8cf434b3/1602015558631/CANY_ICON_BLUE-WHITE.png')"></div>
+			<div class="name">Lizzette Charles</div>
+			<div class="jobTitle">Accounts Receivable & Collections Manager</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Internal Operations
+            </div>
+		</div>	  	    
+	    
+	    <div class="filterDiv ny ak  ">
+            <div class="img" style="background-position-y: 7%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d221cc06fe5f0630aed8_2021_06-MCP-CANY-Louise%20O%27Neill-0001-1248.jpg')"></div>
+			<div class="name">Louise O’Neill</div>
+			<div class="jobTitle">Project Manager</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture
+            </div>
+		</div>	    	 	
+		
+		
+	    <div class="filterDiv ny io  ">
+            <div class="img" style="background-position-y: 7%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d2225bd5a2735124095c_2021_06-MCP-CANY-Malika%20Houmani-0001-0196.jpg')"></div>
+			<div class="name">Malika Houmani</div>
+			<div class="jobTitle">Project Administrator</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Internal Operations
+            </div>
+		</div>	    	 	    
+	    
+	    <div class="filterDiv ny ak  ">
+            <div class="img" style="background-position-y: 26%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d223c63eb80060b5ae55_2021_06-MCP-CANY-Matthew%20Mantilla-0003-0010.jpg')"></div>
+			<div class="name">Mathew Mantilla</div>
+			<div class="jobTitle">Assistant Project Manager</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture
+            </div>
+		</div>	    	    
+	    
+	    <div class="filterDiv ny ak  ">
+            <div class="img" style="background-position-y: 16%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d2231ca1db6a3b6afb01_2021_06-MCP-CANY-Nicole%20Mezydlo-0003-0178.jpg')"></div>
+			<div class="name">Nicole Mezydlo</div>
+			<div class="jobTitle">Assistant Project Manager</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture
+            </div>
+		</div>	    	    
+		
+	    <div class="filterDiv ny io  ">
+            <div class="img" style="background-position-y: 18%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d223c63eb8b5cbb5ae54_2021_06-MCP-CANY-Patty%20Heisey-0001-0862.jpg')"></div>
+			<div class="name">Patty Rudisill Heisey</div>
+			<div class="jobTitle">Senior Vice President of Finance</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Internal Operations
+            </div>
+		</div>	    	    
+	    
+	    <div class="filterDiv ny ak  ">
+            <div class="img" style="background-position-y: 18%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d2235bd5a2426324095f_2021_06-MCP-CANY-Paul%20Paloglou-0001-0143.jpg')"></div>
+			<div class="name">Paul Paloglou</div>
+			<div class="jobTitle">Project Manager</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture
+            </div>
+		</div>	    
+	    
+	    
+	    <div class="filterDiv chi ak  ">
+            <div class="img" style="background-position-y: 44%;background-image:url('https://static1.squarespace.com/static/5defb9973be8fa60506a127c/t/5f7cd146d905115b8cf434b3/1602015558631/CANY_ICON_BLUE-WHITE.png')"></div>
+			<div class="name">Reba Ashby</div>
+			<div class="jobTitle">Chicago Branch Manager</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture
+            </div>
+		</div>
+		
+		
+	    <div class="filterDiv nyc ak  ">
+			<div class="img" style="background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d224986978524f61354a_2021_06-MCP-CANY-Rita%20Pauliushchyk-0003-0216.jpg')"></div>
+			<div class="name">Rita Pauliushchyk</div>
+			<div class="jobTitle">Project Manager</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture
+            </div>
+		</div>
+	    
+	    <div class="filterDiv nyc lead  ">
+			<div class="img" style="background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d22428a991a57485f8ff_2021_06-MCP-CANY-Rob%20Lichtenberg-0005-1319.jpg')"></div>
+			<div class="name">Rob Lichtenberger</div>
+			<div class="jobTitle">Vice President of Field Operations</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Leadership
+            </div>
+		</div>
+	    
+	    <div class="filterDiv nyc io ">
+            <div class="img" style="background-position-y: 44%;background-image:url('https://static1.squarespace.com/static/5defb9973be8fa60506a127c/t/5f7cd146d905115b8cf434b3/1602015558631/CANY_ICON_BLUE-WHITE.png')"></div>
+			<div class="name">Shari Robinson</div>
+			<div class="jobTitle">Contracts & Accounting Administrative Assistant</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Internal Operations
+            </div>
+		</div>	    
+	    
+	    <div class="filterDiv nyc lead  ">
+			<div class="img" style="background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d224c63eb864f8b5ae5f_2021_06-MCP-CANY-Stephen%20Lythe-0001-1031.jpg')"></div>
+			<div class="name">Stephen Lythe</div>
+			<div class="jobTitle">Chief Executive Officer</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Leadership
+            </div>
+		</div>
+	    
+	    <div class="filterDiv nyc ak ">
+            <div class="img" style="background-position-y: 44%;background-image:url('https://static1.squarespace.com/static/5defb9973be8fa60506a127c/t/5f7cd146d905115b8cf434b3/1602015558631/CANY_ICON_BLUE-WHITE.png')"></div>
+			<div class="name">Stuart Bateman</div>
+			<div class="jobTitle">Assistant Project Manager</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture
+            </div>
+		</div>
+		
+	    <div class="filterDiv nyc ak  ">
+			<div class="img" style="background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d225b0ae345e6188ffe6_2021_06-MCP-CANY-Taras%20Yavorskyi-0001-1396.jpg')"></div>
+			<div class="name">Taras Yavorskyi</div>
+			<div class="jobTitle">Assistant Project Manager</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture
+            </div>
+		</div>
+		
+	    <div class="filterDiv nyc  lead ">
+			<div class="img" style="background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d226c63eb81780b5ae61_2021_06-MCP-CANY-Thomas%20Seminara-0005-0235.jpg')"></div>
+			<div class="name">Thomas Seminara</div>
+			<div class="jobTitle">Senior VP of Marketing & Technical Services</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Leadership
+            </div>
+		</div>
+	 
+	    <div class="filterDiv nyc ak ">
+			<div class="img" style="background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d2266011a9b98781eb46_2021_06-MCP-CANY-Tim%20Wynter-Stoner-0005-1391.jpg')"></div>
+			<div class="name">Tim Wynter-Stoner</div>
+			<div class="jobTitle">Senior Project Manager</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+                     vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture
+            </div>
+		</div>
+	    
+	    <div class="filterDiv io ">
+			<div class="img" style="background-position-y: 44%;background-image:url('https://static1.squarespace.com/static/5defb9973be8fa60506a127c/t/5f7cd146d905115b8cf434b3/1602015558631/CANY_ICON_BLUE-WHITE.png')"></div>
+			<div class="name">Venus Escobar</div>
+			<div class="jobTitle">Billing Specialist / Studio Liaison</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+    vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Internal Operations</div>
+		</div>
+	    
+	    <div class="filterDiv lead nyc eng ">
+			<div class="img" style="background-position-y: 22%;background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d227a58c463a153f6549_2021_06-MCP-CANY-Vincent%20Ortiz-0005-1198.jpg"></div>
+			<div class="name">Vincent Ortiz</div>
+			<div class="jobTitle">Director of Professional Services, PE</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+    vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Engineering</div>
+		</div>
+	    
+	     <div class="filterDiv eng nyc  ">
+			<div class="img" style="background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d2272c14fdc3eea26b14_2021_06-MCP-CANY-Viviana%20Vumbaca-0001-0927.jpg"></div>
+			<div class="name">Viviana Vumbaca</div>
+			<div class="jobTitle">Senior Engineer</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+    vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Engineering</div>
+		</div>
+		
+	    <div class="filterDiv eng nyc ">
+			<div class="img" style="background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d2278f21a61020be4a4b_2021_06-MCP-CANY-William%20Marcano-0001-0804.jpg"></div>
+			<div class="name">William Marcano</div>
+			<div class="jobTitle">Project Engineer</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+    vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Engineering</div>
+		</div>
+	    
+		<div class="filterDiv ake nyc ">
+			<div class="img" style="background-image:url('https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60f6d228a58c4659f63f654a_2021_06-MCP-CANY-Xsusha%20Flandro-0003-0099.jpg"></div>
+			<div class="name">Xsusha Flandro</div>
+			<div class="jobTitle">Project Manager / PA Architectural Conservator</div>
+			<div ><img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+    vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture</div>
+		</div>
+		
+		
+		<div class="filterDiv nyc ak ">
+			<div class="img" style="background-position-y: 44%;background-image:url('https://static1.squarespace.com/static/5defb9973be8fa60506a127c/t/5f7cd146d905115b8cf434b3/1602015558631/CANY_ICON_BLUE-WHITE.png')"></div>
+			<div class="name">Yeinny Szczepkowski</div>
+			<div class="jobTitle">Design Associate</div>
+			<div >
+			    <img style="margin-right: 10px;width: 7px;height: 7px;background: #C4C4C4;border-radius: 129px;
+    vertical-align: middle;"href="https://uploads-ssl.webflow.com/5fc68594c6b4f00475c0e698/60db2b76881c37a638630d6f_Ellipse%20310.png">Architecture</div>
+		</div>
+		
+	</div>
+</div>
+	<script>
+		filterSelection("all")
+		function filterSelection(c) {
+		  var x, i;
+		  x = document.getElementsByClassName("filterDiv");
+		  if (c == "all") c = "";
+		  for (i = 0; i < x.length; i++) {
+		     w3RemoveClass(x[i], "show");
+		   if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+		  }
+		}
+		
+		function w3AddClass(element, name) {
+		  var i, arr1, arr2;
+		  arr1 = element.className.split(" ");
+		  arr2 = name.split(" ");
+		    setTimeout(()=>{for (i = 0; i < arr2.length; i++) {
+		    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+		  }}, 200);
+		}
+		
+		function w3RemoveClass(element, name) {
+		  var i, arr1, arr2;
+		  arr1 = element.className.split(" ");
+		  arr2 = name.split(" ");
+		for (i = 0; i < arr2.length; i++) {
+		    while (arr1.indexOf(arr2[i]) > -1) {
+		      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+		    }
+		  }
+		  element.className = arr1.join(" ");
+		}
+		
+		// Add active class to the current button (highlight it)
+		var btnContainer = document.getElementById("myBtnContainer");
+		var btns = btnContainer.getElementsByClassName("btn");
+		for (var i = 0; i < btns.length; i++) {
+		  btns[i].addEventListener("click", function(){
+		    var current = document.getElementsByClassName("active");
+		    current[0].className = current[0].className.replace(" active", "");
+		    this.className += " active";
+		  });
+		}
+	</script>
+</body>
+
+</html>
